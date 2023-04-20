@@ -44,8 +44,8 @@ namespace EStore.Repository.Implement
             return _dbConnect.product.Where(
             x => x.title.Trim().Contains(text)
             || x.thumnail.Trim().Contains(text)
-            || x.price.Equals(text)
             ).ToList();
+            
         }
 
         public void UpdateProduct(product product)
