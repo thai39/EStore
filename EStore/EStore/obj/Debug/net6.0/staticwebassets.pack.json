@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\imgs\\quan-short-nam-sqm5015-den-2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\quan-short-nam-sqm5015-den-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\imgs\\quan-short-nam-sqm5015-den-4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\quan-short-nam-sqm5015-den-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\imgs\\sqm5003-den-3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\sqm5003-den-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\imgs\\tsm6077-dn1-qsm6023-bee-11.jpg",
+      "PackagePath": "staticwebassets\\imgs\\tsm6077-dn1-qsm6023-bee-11.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.EStore.props",
+      "PackagePath": "build\\EStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.EStore.props",
+      "PackagePath": "buildMultiTargeting\\EStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.EStore.props",
+      "PackagePath": "buildTransitive\\EStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

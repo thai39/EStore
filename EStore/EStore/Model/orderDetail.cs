@@ -11,5 +11,7 @@ namespace EStore.Model
         public float price { get; set; }
         public int amount { get; set; }
         public float total_price { get; set; }
+
+        
     }
 }

@@ -14,6 +14,28 @@ namespace EStore.Repository.Implement
         }
         public void AddProduct(product pro)
         {
+            if(pro.ImageFile.Length > 0)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "imgs", pro.ImageFile.FileName);
+                using (var stream = System.IO.File.Create(path))
+                {
+                   pro.ImageFile.CopyTo(stream);
+                }
+                pro.image = "/imgs/" + pro.ImageFile.FileName;
+            }
+            //add more picture
+            /*if(files.Length > 0)
+            {
+                foreach (var item in files)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "imgs", item.FileName);
+                    using (var stream = System.IO.File.Create(path))
+                    {
+                        item.CopyTo(stream);
+                    }
+                    pro.images += "/imgs/" + item.FileName + ";";
+                }
+            }*/
             _dbConnect.product.Add(pro);
             _dbConnect.SaveChanges();
         }
@@ -44,8 +66,8 @@ namespace EStore.Repository.Implement
             return _dbConnect.product.Where(
             x => x.title.Trim().Contains(text)
             || x.thumnail.Trim().Contains(text)
-            || x.price.Equals(text)
             ).ToList();
+            
         }
 
         public void UpdateProduct(product product)

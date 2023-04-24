@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EStore.Migrations
 {
     [DbContext(typeof(DBConnect))]
-    [Migration("20230419130105_v1")]
+    [Migration("20230424082238_v1")]
     partial class v1
     {
         /// <inheritdoc />
@@ -103,6 +103,27 @@ namespace EStore.Migrations
                     b.ToTable("customer");
                 });
 
+            modelBuilder.Entity("EStore.Model.gallery", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("images")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("proId")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("proId");
+
+                    b.ToTable("gallery");
+                });
+
             modelBuilder.Entity("EStore.Model.order", b =>
                 {
                     b.Property<int>("id")
@@ -172,8 +193,14 @@ namespace EStore.Migrations
                     b.Property<string>("description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("discount")
+                        .HasColumnType("int");
+
                     b.Property<int>("id_category")
                         .HasColumnType("int");
+
+                    b.Property<string>("image")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("price")
                         .HasColumnType("real");
@@ -226,6 +253,15 @@ namespace EStore.Migrations
                     b.HasKey("id");
 
                     b.ToTable("staff");
+                });
+
+            modelBuilder.Entity("EStore.Model.gallery", b =>
+                {
+                    b.HasOne("EStore.Model.product", null)
+                        .WithMany()
+                        .HasForeignKey("proId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EStore.Model.order", b =>

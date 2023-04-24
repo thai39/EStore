@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "WUqEzjoh9EbKSabm+xTwVWBi9bxZd2k8ykBEXMTK+cM=",
+  "Hash": "H0b7Xu8gUNFyGsLeE+fGx4Xkqx/F0wYgeDUBMCqFKEA=",
   "Source": "EStore",
   "BasePath": "_content/EStore",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "EStore\\wwwroot",
+      "Source": "EStore",
+      "ContentRoot": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\",
+      "BasePath": "_content/EStore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\imgs\\quan-short-nam-sqm5015-den-2.jpg",
+      "SourceId": "EStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\",
+      "BasePath": "_content/EStore",
+      "RelativePath": "imgs/quan-short-nam-sqm5015-den-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\quan-short-nam-sqm5015-den-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\imgs\\quan-short-nam-sqm5015-den-4.jpg",
+      "SourceId": "EStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\",
+      "BasePath": "_content/EStore",
+      "RelativePath": "imgs/quan-short-nam-sqm5015-den-4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\quan-short-nam-sqm5015-den-4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\imgs\\sqm5003-den-3.jpg",
+      "SourceId": "EStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\",
+      "BasePath": "_content/EStore",
+      "RelativePath": "imgs/sqm5003-den-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\sqm5003-den-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\imgs\\tsm6077-dn1-qsm6023-bee-11.jpg",
+      "SourceId": "EStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dotha\\source\\repos\\EStore\\EStore\\EStore\\wwwroot\\",
+      "BasePath": "_content/EStore",
+      "RelativePath": "imgs/tsm6077-dn1-qsm6023-bee-11.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\tsm6077-dn1-qsm6023-bee-11.jpg"
+    }
+  ]
 }

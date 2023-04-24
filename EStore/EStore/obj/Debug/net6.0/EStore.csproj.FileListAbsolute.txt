@@ -86,3 +86,4 @@ C:\Users\dotha\source\repos\EStore\EStore\EStore\obj\Debug\net6.0\refint\EStore.
 C:\Users\dotha\source\repos\EStore\EStore\EStore\obj\Debug\net6.0\EStore.pdb
 C:\Users\dotha\source\repos\EStore\EStore\EStore\obj\Debug\net6.0\EStore.genruntimeconfig.cache
 C:\Users\dotha\source\repos\EStore\EStore\EStore\obj\Debug\net6.0\ref\EStore.dll
+C:\Users\dotha\source\repos\EStore\EStore\EStore\bin\Debug\net6.0\EStore.staticwebassets.runtime.json
