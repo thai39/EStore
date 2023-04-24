@@ -41,7 +41,7 @@ namespace EStore.Controllers
 
         
         [HttpPost("add")]
-        public void Post(product pro)
+        public void Post([FromForm] product pro)
         {
             _productService.AddProduct(pro);
         }

@@ -17,6 +17,7 @@ namespace EStore.Data
         public DbSet<order> orders { get; set; }
         public DbSet<orderDetail> order_detail { get; set; }
         public DbSet<account> account { get; set; }
+        public DbSet<gallery> gallery { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -24,6 +25,9 @@ namespace EStore.Data
             modelBuilder.ApplyConfiguration(new ProductCF());
             modelBuilder.ApplyConfiguration(new OrderCF());
             modelBuilder.ApplyConfiguration(new OrderDetailCF());
+            modelBuilder.ApplyConfiguration(new GalleryCF());
+
+
         }
     }
 }

@@ -87,6 +87,8 @@ namespace EStore.Migrations
                     thumnail = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     price = table.Column<float>(type: "real", nullable: false),
+                    discount = table.Column<int>(type: "int", nullable: false),
+                    image = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     id_category = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -128,6 +130,26 @@ namespace EStore.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "gallery",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    proId = table.Column<int>(type: "int", nullable: false),
+                    images = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_gallery", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_gallery_product_proId",
+                        column: x => x.proId,
+                        principalTable: "product",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "order_detail",
                 columns: table => new
                 {
@@ -155,6 +177,11 @@ namespace EStore.Migrations
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_gallery_proId",
+                table: "gallery",
+                column: "proId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_order_detail_id_order",
@@ -187,6 +214,9 @@ namespace EStore.Migrations
         {
             migrationBuilder.DropTable(
                 name: "account");
+
+            migrationBuilder.DropTable(
+                name: "gallery");
 
             migrationBuilder.DropTable(
                 name: "order_detail");

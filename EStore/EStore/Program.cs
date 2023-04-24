@@ -30,7 +30,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddTransient<IAccountRepo, AccountRepo>();
 builder.Services.AddTransient<IProductRepo, ProductRepo>();
+builder.Services.AddTransient<IGalleryRepo, GalleryRepo>();
 builder.Services.AddTransient<IProductService, ProductService>();
+builder.Services.AddTransient<IUploadFileService, UploadFileService>();
 builder.Services.AddDbContext<DBConnect>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));

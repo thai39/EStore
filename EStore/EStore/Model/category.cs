@@ -7,5 +7,7 @@ namespace EStore.Model
         [Key]
         public int Id { get; set; }
         public string cName { get; set; }
+
+        
     }
 }
